@@ -1,16 +1,46 @@
-# 🕵️‍♂️ Detective Quest: O Caso do Projeto Zero
+# 🕵️ Detective Quest: O Caso do Projeto Zero
 
-Um jogo de mistério interativo baseado em texto, desenvolvido em Python.
+![Python](https://img.shields.io/badge/Python-3.x-3776AB?style=flat-square&logo=python&logoColor=white)
+![Status](https://img.shields.io/badge/status-concluído-2ea44f?style=flat-square)
 
-## 📝 Sobre o Projeto
-Este projeto é um desafio de lógica onde o jogador assume o papel de um detetive para resolver o roubo de um protótipo secreto na empresa TechCorp. O jogo utiliza lógica de programação (condicionais, loops e inputs) para criar uma narrativa imersiva.
+Jogo de mistério em texto, feito em Python, para praticar lógica de programação.
 
-## 🎮 Como Jogar
+## 📝 Sobre o projeto
 
-### Pré-requisitos
-* Ter o [Python](https://www.python.org/) instalado no computador.
+Você é um detetive contratado pela TechCorp para descobrir quem roubou o protótipo secreto **Projeto Zero**. São três fases, e cada uma trabalha um conceito diferente:
 
-### Passo a Passo
-1. Clone este repositório:
-   ```bash
-   git clone [https://github.com/SEU-USUARIO/detective-quest.git](https://github.com/SEU-USUARIO/detective-quest.git)
+| Fase | Desafio | Conceito praticado |
+|---|---|---|
+| 1. O código da porta | Decodificar uma mensagem (A=1, B=2...) com 3 tentativas | `while`, contador, `input` |
+| 2. A dedução | Descobrir o culpado por eliminação | condicionais, leitura de texto |
+| 3. O esconderijo | Interpretar uma pista e escolher o lugar certo | múltipla escolha, `return` |
+
+## 🎮 Como jogar
+
+**Pré-requisito:** [Python 3](https://www.python.org/downloads/) instalado.
+
+```bash
+git clone https://github.com/C4PSZERA/detective-quest.git
+cd detective-quest
+python jogo_detetive.py
+```
+
+Leia as pistas com calma e digite suas respostas no terminal. Errou? É só rodar de novo.
+
+## 📁 Estrutura
+
+```
+detective-quest/
+├── jogo_detetive.py   # o jogo inteiro
+└── README.md
+```
+
+## 💡 Próximas ideias
+
+- [ ] Sortear o culpado a cada partida
+- [ ] Sistema de pontuação por tempo
+- [ ] Mais fases e finais alternativos
+
+---
+
+Feito por [C4PSZERA](https://github.com/C4PSZERA) 🦫

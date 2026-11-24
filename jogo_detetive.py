@@ -14,31 +14,31 @@ def introducao():
 
 def fase_1():
     print("\n--- FASE 1: O CÓDIGO DA PORTA ---")
-    mostrar_texto("Encontra um bilhete codificado no chão: '4 - 1 - 4 - 15'.")
+    mostrar_texto("Você encontra um bilhete codificado no chão: '4 - 1 - 4 - 15'.")
     mostrar_texto("Dica: A=1, B=2, C=3...")
     
     tentativas = 3
     while tentativas > 0:
-        resposta = input("Descodifique os números e digite a palavra: ").upper().strip()
+        resposta = input("Decodifique os números e digite a palavra: ").upper().strip()
         if resposta == "DADO":
-            print("✅ Correto! A palavra é DADO. A porta abre-se.")
+            print("✅ Correto! A palavra é DADO. A porta se abre.")
             return True
         else:
             tentativas -= 1
             print(f"❌ Incorreto. Tentativas restantes: {tentativas}")
     
-    print("💀 Falhou em abrir a porta. O ladrão escapou.")
+    print("💀 Você não conseguiu abrir a porta. O ladrão escapou.")
     return False
 
 def fase_2():
     print("\n--- FASE 2: A DEDUÇÃO ---")
-    mostrar_texto("Factos recolhidos:")
+    mostrar_texto("Fatos coletados:")
     print("1. Quem estava na Sala de Servidores roubou o projeto.")
-    print("2. O Marcus estava a comer na Copa.")
+    print("2. O Marcus estava comendo na Copa.")
     print("3. O Sr. Victor NÃO estava no Laboratório Principal.")
     print("4. A Dra. Elena estava numa das 3 salas (Copa, Lab, Servidores).")
     
-    mostrar_texto("Analisando os factos...", 2)
+    mostrar_texto("Analisando os fatos...", 2)
     
     resposta = input("Quem é o culpado (quem estava na Sala de Servidores)? [Elena/Marcus/Victor]: ").upper().strip()
     
@@ -46,7 +46,7 @@ def fase_2():
         print("✅ Brilhante! Por eliminação, o Victor estava na sala do crime.")
         return True
     else:
-        print("❌ Dedução errada. Acusou a pessoa errada e foi despedido.")
+        print("❌ Dedução errada. Você acusou a pessoa errada e foi demitido.")
         return False
 
 def fase_3():
@@ -60,9 +60,10 @@ def fase_3():
     resposta = input("Onde está o projeto? [A/B/C]: ").upper().strip()
     
     if resposta == "C":
+        print("✅ Isso! O relógio parado esconde o pacote.")
         return True
     else:
-        print("❌ Procurou no sítio errado e o cúmplice do Victor fugiu com o projeto.")
+        print("❌ Você procurou no lugar errado e o cúmplice do Victor fugiu com o projeto.")
         return False
 
 def jogar():
@@ -71,10 +72,10 @@ def jogar():
         if fase_2():
             if fase_3():
                 print("\n🎉 PARABÉNS DETETIVE! 🎉")
-                print("Encontrou o Projeto Zero dentro do relógio e prendeu o Sr. Victor.")
-                print("Caso Encerrado com Sucesso.")
+                print("Você encontrou o Projeto Zero dentro do relógio e prendeu o Sr. Victor.")
+                print("Caso encerrado com sucesso.")
             else:
-                print("\nFIM DE JOGO - Quase conseguiu!")
+                print("\nFIM DE JOGO - Quase lá!")
         else:
             print("\nFIM DE JOGO - O mistério permanece.")
     else:
